@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Demo Mock Test - Lo Kachelang Portal</title>
+<meta name="description" content="Try a free mock test in English, General Knowledge of Assam, Reasoning and Mathematics. No login needed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1e3a8a;--navy2:#1e40af;--navy3:#172554;--ink:#16233a;--mute:#51627d;
+  --bg:#eef3fa;--card:#fff;--line:#d5deec;--soft:#e3ebf7;
+  --green:#15803d;--red:#b91c1c;--violet:#6d28d9;--amber:#f59e0b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Public Sans',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;color-scheme:light}
+button{font:inherit;cursor:pointer}
+a{color:var(--navy2)}
+:focus-visible{outline:3px solid #1d4ed8;outline-offset:2px}
+.stripe{height:4px;background:linear-gradient(90deg,#f93 33%,#fff 33% 66%,#138808 66%)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+header.top{background:var(--navy);color:#fff}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:10px}
+.brand i{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:6px;background:#fff;color:var(--navy);font-style:normal;font-weight:800;font-size:.9rem}
+.pill{display:inline-block;background:var(--amber);color:#1c1300;font-weight:800;font-size:.7rem;letter-spacing:.06em;padding:2px 8px;border-radius:999px;text-transform:uppercase}
+.btn{display:inline-block;padding:.55rem 1.1rem;border-radius:4px;font-weight:700;font-size:.9rem;background:var(--navy2);color:#fff;border:1px solid var(--navy2);text-decoration:none;text-align:center}
+.btn:hover{background:var(--navy)}
+.btn.ghost{background:#fff;color:var(--navy2)}
+.btn.ghost:hover{background:#eff6ff}
+.btn.ok{background:var(--green);border-color:var(--green)}
+.btn.violet{background:var(--violet);border-color:var(--violet)}
+.btn.warn{background:var(--amber);border-color:var(--amber);color:#1c1300}
+.btn.warn:hover{background:#d98706}
+.btn.sm{padding:.3rem .75rem;font-size:.8rem}
+.btn.lg{padding:.8rem 1.6rem;font-size:1rem}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px}
+.hero{background:linear-gradient(180deg,var(--navy) 0,var(--navy2) 100%);color:#fff;padding:40px 0 64px}
+.hero h1{font-size:clamp(1.8rem,4.5vw,2.8rem);line-height:1.15;margin:12px 0;font-weight:800;max-width:18ch}
+.hero p{color:#dbe7ff;max-width:56ch;font-size:1.05rem;margin:0 0 20px}
+.hero ul{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-wrap:wrap;gap:8px 20px;color:#dbe7ff;font-size:.95rem}
+.hero li:before{content:"\2713";color:#4ade80;font-weight:800;margin-right:6px}
+.sec{padding:36px 0}
+.sec h2{font-size:1.5rem;margin:0 0 4px;font-weight:800}
+.sec .sub{color:var(--mute);margin:0 0 20px}
+.grid{display:grid;gap:16px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.pull{margin-top:-40px}
+.sub-card{padding:18px;display:flex;flex-direction:column;gap:12px;position:relative}
+.badge{width:46px;height:46px;border-radius:8px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:1rem}
+.sub-card h3{margin:0;font-size:1.1rem}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.meta span{background:var(--soft);border-radius:4px;padding:2px 8px;font-size:.78rem;font-weight:600;color:var(--navy)}
+.done{position:absolute;top:12px;right:12px;background:#dcfce7;color:#166534;border-radius:999px;font-size:.75rem;font-weight:700;padding:2px 10px}
+.locked{position:relative;overflow:hidden}
+.locked .blur{filter:blur(3px);opacity:.7;user-select:none;pointer-events:none}
+.locked .lk{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.lockchip{background:var(--navy3);color:#fff;border-radius:999px;font-size:.8rem;font-weight:700;padding:5px 14px;display:inline-flex;gap:6px;align-items:center}
+svg.ic{width:1em;height:1em;vertical-align:-.12em}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{padding:.65rem .8rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--soft)}
+td.y{color:var(--green);font-weight:700}
+td.n{color:#8a97ab}
+.plans{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.plan{padding:16px;text-align:center;position:relative}
+.plan .tag{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--navy2);color:#fff;font-size:.7rem;font-weight:800;border-radius:999px;padding:2px 10px;white-space:nowrap}
+.plan .tag.g{background:var(--green)}
+.plan .p{font-size:1.7rem;font-weight:800;color:var(--navy2)}
+.plan s{color:#8a97ab}
+.cta{background:var(--navy3);color:#fff;border-radius:10px;padding:28px;text-align:center}
+.cta h2{margin:0 0 6px}
+.cta p{color:#c7d6f5;margin:0 0 16px}
+footer{padding:28px 0;color:var(--mute);font-size:.85rem;text-align:center}
+
+/* exam */
+.ex-head{background:var(--navy);color:#fff;padding:8px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.ex-head .t{font-weight:700}
+.ex-head .s{font-size:.78rem;color:#bcd0f7}
+.timer{background:#fff;color:var(--navy);font-weight:800;border-radius:4px;padding:4px 12px;font-variant-numeric:tabular-nums;font-size:1.05rem}
+.timer.low{background:var(--red);color:#fff;animation:pl 1s infinite}
+@keyframes pl{50%{opacity:.6}}
+@media(prefers-reduced-motion:reduce){.timer.low{animation:none}}
+.ex-body{display:flex;min-height:calc(100vh - 100px)}
+.ex-main{flex:1;padding:16px;min-width:0}
+.qtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-weight:700;color:var(--navy)}
+.qtext{font-size:1.1rem;font-weight:600;white-space:pre-line;margin:0 0 16px}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:#fff;border:1px solid #c5d1e3;border-radius:6px;padding:12px;margin-bottom:8px;color:var(--ink)}
+.opt:hover{background:#f6f9fe}
+.opt.sel{background:#eff6ff;border-color:var(--navy2);box-shadow:0 0 0 2px rgba(30,64,175,.15)}
+.opt .r{flex:none;width:20px;height:20px;border-radius:50%;border:2px solid #94a3b8;margin-top:2px}
+.opt.sel .r{background:var(--navy2);border-color:var(--navy2);box-shadow:inset 0 0 0 3px #fff}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pal{width:290px;flex:none;background:#fff;border-left:1px solid var(--line);padding:14px;overflow-y:auto}
+.leg{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:.75rem;margin-bottom:12px}
+.leg b{display:inline-block;min-width:22px;text-align:center;color:#fff;border-radius:4px;padding:1px 4px;margin-right:4px}
+.qs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.qb{height:42px;border-radius:4px;border:0;font-weight:700;color:#fff;background:#9ca3af}
+.qb.A{background:#16a34a}.qb.N{background:#dc2626}.qb.M{background:var(--violet);border-radius:999px}
+.qb.cur{outline:3px solid var(--navy2);outline-offset:1px}
+.palbtn{display:none}
+.demo-note{background:#fffbeb;border:1px solid #fcd34d;color:#78350f;border-radius:6px;padding:8px 12px;font-size:.82rem;margin-bottom:12px}
+@media(max-width:860px){
+  .pal{position:fixed;inset:0 0 0 auto;z-index:20;transform:translateX(100%);transition:transform .2s;box-shadow:-8px 0 24px rgba(0,0,0,.2)}
+  .pal.open{transform:none}
+  .palbtn{display:inline-block}
+}
+@media(prefers-reduced-motion:reduce){.pal{transition:none}}
+
+/* modal */
+.mod{position:fixed;inset:0;background:rgba(15,23,42,.6);z-index:50;display:flex;align-items:center;justify-content:center;padding:16px}
+.mod .box{background:#fff;border-radius:10px;max-width:520px;width:100%;padding:22px;max-height:90vh;overflow:auto}
+.mod h2{margin:0 0 8px}
+.mod ul{padding-left:18px;color:var(--mute)}
+
+/* result */
+.score{text-align:center;padding:24px}
+.score .big{font-size:3.4rem;font-weight:800;color:var(--navy2);line-height:1}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:16px}
+.stat{background:var(--bg);border-radius:6px;padding:10px}
+.stat b{display:block;font-size:1.4rem}
+.rv{padding:14px;margin-bottom:10px;font-size:.92rem}
+.rv .o{padding:4px 8px;border-radius:4px;margin-top:4px}
+.rv .o.c{background:#dcfce7;color:#14532d}
+.rv .o.w{background:#fee2e2;color:#7f1d1d}
+.rvlock{position:relative}
+.rvlock .inner{filter:blur(5px);user-select:none;pointer-events:none;opacity:.8}
+.rvlock .over{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;padding-top:40px;background:linear-gradient(180deg,rgba(238,243,250,.2),rgba(238,243,250,.95) 60%)}
+.rvlock .over .card{padding:20px;text-align:center;max-width:420px;box-shadow:0 10px 30px rgba(15,23,42,.18)}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:8px;top:8px;background:#fff;padding:6px 10px;z-index:99}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="app"></div>
+<div id="modal"></div>
+
+<script>
+/* ==========================================================================
+   SETTINGS - change these two lines if your links change
+   ========================================================================== */
+const SIGNUP_URL='https://lokachelang.github.io/';   // your main portal (sign up / login)
+const SUPPORT='ronghangeducation@gmail.com';
+
+/* Plans copied from the main portal so prices match */
+const PLANS=[
+ {name:'3 Days Trial',days:3,price:9,mrp:45},
+ {name:'1 Month',days:30,price:29,mrp:145,tag:'Popular'},
+ {name:'3 Months',days:90,price:59,mrp:295},
+ {name:'6 Months',days:180,price:99,mrp:495},
+ {name:'12 Months',days:365,price:149,mrp:745,tag:'Best Value',g:1}
+];
+
+/* ==========================================================================
+   DEMO QUESTION BANK - 4 subjects x 10 questions
+   Format: [question, [A,B,C,D], index of correct option (0=A ... 3=D)]
+   shuffle:true randomises option order on every attempt
+   ========================================================================== */
+const SUBJECTS=[
+{id:'eng',name:'English',abbr:'EN',color:'#1d4ed8',about:'Grammar, vocabulary, parallelism, modifiers and usage.',qs:[
+ ['Choose the correct word to complete the sentence:\n“Scarcely had the committee published its preliminary findings _____ regional stakeholders demanded a formal public hearing.”',['than','when','unless','since'],1],
+ ['Which sentence shows correct subject-verb agreement?',['Neither the director nor the lead actors was aware of the revised schedule.','Neither the director nor the lead actors were aware of the revised schedule.','Each of the participants in the workshops have received their certificates.','The quality of the mangoes sold in the market are remarkably high.'],1],
+ ['Choose the word that best matches the meaning: “A brief, witty, and pointed observation or statement.”',['Aphoristic','Prolix','Ambiguous','Pedantic'],0],
+ ['Choose the best revision to fix the modifier error in the sentence:\n“Walking through the old bazaar at dusk, the spice stalls smelled overwhelmingly of cardamom to Elena.”',['Walking through the old bazaar at dusk, Elena smelled an overwhelming aroma of cardamom from the spice stalls.','Walking through the old bazaar at dusk, the smell of cardamom was overwhelming to the spice stalls of Elena.','The spice stalls smelled overwhelmingly of cardamom to Elena, walking through the old bazaar at dusk.','Walking through the old bazaar at dusk, cardamom smelled overwhelmingly to Elena’s spice stalls.'],0],
+ ['Choose the correct preposition:\n“Her refusal to compromise on data privacy was commensurate _____ the sensitivity of the clinical records.”',['to','for','with','in'],2],
+ ['Which option fixes the faulty parallelism?\n“The fellowship trains researchers to design experiments, analyzing longitudinal datasets, and how to publish peer-reviewed articles.”',['to design experiments, analyzing longitudinal datasets, and publishing peer-reviewed articles','design experiments, analyze longitudinal datasets, and publish peer-reviewed articles','designing experiments, analyze longitudinal datasets, and publishing peer-reviewed articles','to design experiments, to analyze longitudinal datasets, and publishing peer-reviewed articles'],1],
+ ['In academic writing, if a claim is described as “tenuous,” what does it mean?',['It is backed by extensive data.','It is weak or slender in evidence or support.','It is universally accepted.','It is completely irrelevant to the topic.'],1],
+ ['Choose the correct verb form:\n“If the municipal council _____ earlier on flood drainage, fewer neighborhoods would have been inundated.”',['acted','has acted','had acted','would act'],2],
+ ['Choose the most appropriate transition word:\n“Automated grading reduces turnaround time for large cohorts; _____, it struggles to evaluate nuanced rhetorical organization.”',['therefore','nevertheless','similarly','consequently'],1],
+ ['Choose the correct punctuation:\n“Kaziranga National Park _____ a UNESCO World Heritage site _____ is renowned for its population of greater one-horned rhinoceroses.”',[', a UNESCO World Heritage site,',': a UNESCO World Heritage site;','; a UNESCO World Heritage site:','(a UNESCO World Heritage site'],0]
+]},
+{id:'gk',name:'General Knowledge of Assam',abbr:'GK',color:'#b45309',shuffle:true,about:'Rivers, history, culture, parks and crafts of Assam.',qs:[
+ ['Which river is a major north-bank tributary of the Brahmaputra and flows through Nameri National Park?',['Kopili','Jia Bharali','Dhansiri','Barak'],1],
+ ['In Ahom history, which title was given to royal chroniclers who compiled the official court chronicles called Buranjis?',['Barphukan','Likhakar Barua','Gohain','Borpatrogohain'],1],
+ ['Which UNESCO World Heritage protected area in Assam, on the Bhutan border, is a known habitat of the golden langur?',['Dibru-Saikhowa National Park','Manas Biosphere Reserve','Pobitora Wildlife Sanctuary','Orang National Park'],1],
+ ['Which Ahom king repelled Turbak’s invasion at the 1527 Battle of Bharali?',['Sukaphaa','Su Hung Mung','Pratap Singha','Rudra Singha'],1],
+ ['Which traditional Assamese musical composition is linked to Vaishnavite Sattras and uses classical ragas?',['Bihu geet','Borgeet','Goalpariya lokageet','Tokari geet'],1],
+ ['Which hill range/region separates the Brahmaputra Valley from the Barak Valley in Assam?',['Mishmi Hills','North Cachar Hills','Patkai Range','Dafla Hills'],1],
+ ['Which famous Assamese work by Lakshminath Bezbaroa features humorous satirical sketches?',['Burhi Aair Sadhu','Kripabor Baruar Kakatar Topola','Padum Kunwari','Miri Jiyori'],1],
+ ['The Treaty of Yandabo (1826) ended the First Anglo-Burmese War and transferred control over Assam mainly from which power to the British East India Company?',['Koch Kingdom','Burmese Empire','Kachari Kingdom','Mughal Empire'],1],
+ ['Sualkuchi in Kamrup district is famous for which craft industry?',['Bell metal craft','Muga and Pat silk','Cane and bamboo furniture','Terracotta pottery'],1],
+ ['Which monument in Sivasagar was built by Queen Ambika during the reign of Siva Singha?',['Rang Ghar','Talatal Ghar','Sivadol','Kareng Ghar'],2]
+]},
+{id:'rea',name:'Reasoning',abbr:'RE',color:'#7c3aed',about:'Seating, series, coding, directions, blood relations and logic.',qs:[
+ ['Six people (P, Q, R, S, T, U) sit in a straight row facing north. R is 3rd to the right of P. Q is at one end. S is not next to P. T sits immediately to the left of U. If Q is at the extreme left end, who sits 4th from the left?',['P','R','T','U'],3],
+ ['Find the next term in the series:\nB2D, E6I, I12O, N20U, _____',['S30E','T30A','S28A','T28E'],1],
+ ['Statements:\n1. All engineers in the lab are certified.\n2. Some certified staff are night-shift leads.\nWhich conclusion definitely follows?',['All night-shift leads are engineers in the lab.','No engineer in the lab is uncertified.','Some night-shift leads are not certified.','All certified staff work in the lab.'],1],
+ ['If MANGO is coded as OCPIQ and PLUMS is coded as RNWOU, how is GRAPE coded?',['ITCRG','HSBQF','ISBRG','HTCRG'],0],
+ ['A hiker walks 12 km north, turns right and walks 5 km, turns right again and walks 12 km, then turns left and walks 3 km. Which direction is the hiker facing now?',['North','South','East','West'],2],
+ ['Pointing to a photo, Rohan says, “She is the daughter of the only son of my paternal grandfather.” How is the woman related to Rohan?',['Mother','Sister','Cousin','Aunt'],1],
+ ['Claim: “City rail ridership rose by 18% after tap-and-go fare cards and integrated bus transfers were introduced.”\nWhich finding would most weaken this causal claim?',['Ticket machines were upgraded at major stations.','Parallel highway tolls doubled at the same time.','Trains ran every 10 minutes during peak hours.','Digital maps were added to the transit app.'],1],
+ ['In a row of students, A is 14th from the left and B is 19th from the right. After swapping seats, A becomes 24th from the left. How many students are in the row?',['40','41','42','43'],2],
+ ['Find the next number in the sequence:\n7, 15, 31, 63, 127, ?',['253','254','255','256'],2],
+ ['Four boxes (Red, Blue, Green, Yellow) are stacked one above another. Green is above Blue and below Yellow. Red is not at the bottom. Which box is at the very bottom?',['Red','Blue','Green','Yellow'],1]
+]},
+{id:'mat',name:'Mathematics',abbr:'MA',color:'#15803d',about:'Algebra, percentages, work & time, speed, probability and geometry.',qs:[
+ ['If 3x − 7 = 2x + 5, what is the value of x² + 4x?',['144','168','192','204'],2],
+ ['A shopkeeper marks an item 40% above cost price and gives a 25% discount on the marked price. What is the net profit or loss percentage?',['15% profit','5% profit','5% loss','10% profit'],1],
+ ['Pipe A fills a tank in 6 hours and Pipe B empties the full tank in 9 hours. If both are opened together when the tank is empty, how many hours to fill it?',['12 hours','15 hours','18 hours','24 hours'],2],
+ ['The average of 5 consecutive even numbers is 26. What is the sum of the smallest and largest of these 5 numbers?',['48','50','52','54'],2],
+ ['A train running at 72 km/h crosses a 250 m platform in 20 seconds. What is the length of the train?',['120 m','150 m','180 m','200 m'],1],
+ ['If log₁₀(x) + log₁₀(x − 3) = 1, what is the value of x?',['2','3','5','10'],2],
+ ['Two numbers are in the ratio 4 : 7. If 6 is subtracted from each, the ratio becomes 1 : 2. What is the larger of the original two numbers?',['28','35','42','49'],2],
+ ['A bag has 5 red, 4 blue, and 3 green balls. Two balls are drawn at random without replacement. What is the probability that both are blue?',['1/11','1/12','1/6','2/11'],0],
+ ['A rectangular garden has a perimeter of 68 m and a diagonal of 26 m. What is the area of the garden?',['210 sq m','240 sq m','260 sq m','288 sq m'],1],
+ ['If sin θ + cos θ = √2, what is the value of sin² θ + cos² θ?',['0','1','2','√2'],1]
+]}
+];
+const MINUTES=10, PER_Q=1;
+
+/* ============================== helpers ============================== */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const L='ABCD';
+const lockSvg='<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+const rs=n=>'\u20B9'+n;
+const mmss=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+
+const results={};          // subject id -> last result (kept in memory only, nothing is stored)
+let ex=null, timer=null;   // current exam
+
+/* ============================== HOME ============================== */
+function topBar(){
+ return `<div class="stripe"></div><header class="top"><div class="wrap"><div class="brand"><i>LK</i><span>Lo Kachelang Portal</span> <span class="pill">Free Demo</span></div><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn ghost sm" href="${SIGNUP_URL}">Member Login</a><a class="btn warn sm" href="${SIGNUP_URL}">Sign Up</a></div></div></header>`;
+}
+function home(){
+ stopTimer();ex=null;
+ const attempted=Object.keys(results).length;
+ $('#app').innerHTML=topBar()+`
+ <section class="hero"><div class="wrap">
+  <span class="pill">No login needed</span>
+  <h1>Try a real CBT mock test, free.</h1>
+  <p>Pick any subject below and start instantly. Same timer, question palette and marking screen you get on exam day.</p>
+  <ul><li>4 subjects</li><li>10 questions each</li><li>10 marks each</li><li>10 minutes each</li></ul>
+  <a class="btn warn lg" href="#subjects">Start a demo test</a>
+ </div></section>
+
+ <main id="main">
+ <section class="wrap pull" id="subjects"><div class="grid g4">
+  ${SUBJECTS.map(s=>{const r=results[s.id];return `
+  <article class="card sub-card">
+   ${r?`<span class="done">Score ${r.score}/${r.total}</span>`:''}
+   <div class="badge" style="background:${s.color}" aria-hidden="true">${s.abbr}</div>
+   <div><h3>${esc(s.name)}</h3><p style="margin:4px 0 0;color:var(--mute);font-size:.9rem">${esc(s.about)}</p></div>
+   <div class="meta"><span>10 Questions</span><span>10 Marks</span><span>10 Minutes</span></div>
+   <button class="btn" onclick="intro('${s.id}')">${r?'Try again':'Start test'}</button>
+  </article>`}).join('')}
+ </div>
+ ${attempted?`<p style="text-align:center;margin:18px 0 0;color:var(--mute)">You have tried ${attempted} of ${SUBJECTS.length} demo tests. <a href="${SIGNUP_URL}">Sign up</a> to unlock everything below.</p>`:''}
+ </section>
+
+ <section class="sec"><div class="wrap">
+  <h2>More inside the full portal</h2>
+  <p class="sub">The demo is just a taste. Members get complete exam-pattern tests with solutions.</p>
+  <div class="grid g3">
+   ${[['RRB NTPC UG Mathematics','5 mock tests · 50 questions each · easy to hard'],['Computer Knowledge','Full 50-question practice set with solutions'],['SSC, Banking & State Govt Exams','Full-length tests in exam-day format'],['Detailed Solutions','Step-by-step explanation for every question'],['Performance Analysis','Topic-wise accuracy and time per question'],['Attempt History','Every score saved, compare your progress']].map(([t,d])=>`
+   <div class="card locked"><div class="blur" style="padding:18px"><h3 style="margin:0 0 6px;font-size:1.02rem">${esc(t)}</h3><p style="margin:0;color:var(--mute);font-size:.88rem">${esc(d)}</p></div><div class="lk"><a class="lockchip" href="${SIGNUP_URL}" style="text-decoration:none">${lockSvg} Sign up to unlock</a></div></div>`).join('')}
+  </div>
+ </div></section>
+
+ <section class="sec" style="padding-top:8px"><div class="wrap">
+  <h2>Demo vs Full Access</h2><p class="sub">See what changes when you sign up.</p>
+  <div class="card" style="overflow-x:auto"><table>
+   <thead><tr><th></th><th>Free Demo</th><th>Member Access</th></tr></thead>
+   <tbody>
+    <tr><td>Questions per subject</td><td>10</td><td class="y">Full-length 50+ question tests</td></tr>
+    <tr><td>Timer &amp; question palette</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+    <tr><td>Correct answers</td><td>First 3 questions only</td><td class="y">All questions</td></tr>
+    <tr><td>Step-by-step solutions</td><td class="n">Locked</td><td class="y">Every question</td></tr>
+    <tr><td>Negative marking like the real exam</td><td class="n">Not in demo</td><td class="y">Yes</td></tr>
+    <tr><td>Performance analysis</td><td class="n">Locked</td><td class="y">Yes</td></tr>
+    <tr><td>Attempt history</td><td class="n">Not saved</td><td class="y">Saved to your account</td></tr>
+   </tbody></table></div>
+ </div></section>
+
+ <section class="sec" style="padding-top:8px"><div class="wrap">
+  <h2>Simple pricing</h2><p class="sub">Limited-time offer: flat 80% off on every plan.</p>
+  <div class="plans">
+   ${PLANS.map(p=>`<div class="card plan">${p.tag?`<span class="tag ${p.g?'g':''}">${p.tag}</span>`:''}<div style="font-weight:700">${p.name}</div><div style="font-size:.8rem;color:var(--mute)">${p.days} days access</div><div class="p">${rs(p.price)}</div><s>${rs(p.mrp)}</s></div>`).join('')}
+  </div>
+ </div></section>
+
+ <section class="wrap" style="padding-bottom:32px"><div class="cta">
+  <h2>Ready for the full test series?</h2>
+  <p>Create your account in a minute and start practising right away.</p>
+  <a class="btn warn lg" href="${SIGNUP_URL}">Sign Up Now</a>
+ </div></section>
+ </main>
+ <footer><div class="wrap">Questions? Email <a href="mailto:${SUPPORT}">${SUPPORT}</a><br>Demo results are not saved. Nothing leaves your browser.</div></footer>`;
+ window.scrollTo(0,0);
+}
+
+/* ============================== INTRO MODAL ============================== */
+function intro(id){
+ const s=SUBJECTS.find(x=>x.id===id);
+ $('#modal').innerHTML=`<div class="mod" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="box">
+  <h2 id="mt">${esc(s.name)} · Demo Test</h2>
+  <ul>
+   <li>10 questions, 1 mark each, total 10 marks.</li>
+   <li>Time limit is 10 minutes. The test submits itself when time runs out.</li>
+   <li>No negative marking in the demo.</li>
+   <li>Use <b>Mark for Review</b> to flag a question and come back later.</li>
+  </ul>
+  <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap"><button class="btn ghost" onclick="closeM()">Cancel</button><button class="btn ok" onclick="start('${id}')">Start now</button></div>
+ </div></div>`;
+ setTimeout(()=>document.querySelector('#modal .btn.ok')?.focus(),0);
+}
+const closeM=()=>$('#modal').innerHTML='';
+
+/* ============================== EXAM ============================== */
+function start(id){
+ closeM();
+ const s=SUBJECTS.find(x=>x.id===id);
+ const qs=s.qs.map(([q,o,a])=>{
+  let opts=o.map((t,i)=>({t,ok:i===a}));
+  if(s.shuffle)opts=shuffle(opts);
+  return {q,opts,ans:opts.findIndex(x=>x.ok)};
+ });
+ ex={s,qs,i:0,sel:qs.map(()=>-1),vis:qs.map(()=>false),mark:qs.map(()=>false),end:Date.now()+MINUTES*60000};
+ ex.vis[0]=true;
+ renderExam();
+ stopTimer();timer=setInterval(tick,500);tick();
+}
+function stopTimer(){if(timer){clearInterval(timer);timer=null}}
+function tick(){
+ if(!ex)return;
+ const left=Math.max(0,Math.round((ex.end-Date.now())/1000));
+ const t=$('#tm');
+ if(t){t.textContent=mmss(left);t.classList.toggle('low',left<=60)}
+ if(left<=0){submit(true)}
+}
+function qState(i){
+ if(ex.mark[i])return 'M';
+ if(ex.sel[i]>=0)return 'A';
+ return ex.vis[i]?'N':'';
+}
+function renderExam(){
+ const q=ex.qs[ex.i],n=ex.qs.length;
+ const cnt=k=>ex.qs.reduce((a,_,i)=>a+(qState(i)===k?1:0),0);
+ const nv=ex.qs.reduce((a,_,i)=>a+(qState(i)===''?1:0),0);
+ const wasOpen=$('#pal')?.classList.contains('open');
+ $('#app').innerHTML=`<div class="stripe"></div>
+ <div class="ex-head"><div><div class="t">${esc(ex.s.name)} · Demo Test</div><div class="s">Candidate: Guest (no login)</div></div>
+  <div style="display:flex;gap:8px;align-items:center"><div class="timer" id="tm" aria-live="off">--:--</div><button class="btn ghost sm palbtn" onclick="$('#pal').classList.toggle('open')">Palette</button></div></div>
+ <div class="ex-body">
+  <main class="ex-main" id="main">
+   <div class="demo-note"><b>Demo mode:</b> 10 questions · 1 mark each · no negative marking. <a href="${SIGNUP_URL}">Sign up</a> for full-length tests.</div>
+   <div class="qtop"><span>Question ${ex.i+1} of ${n}</span><span style="color:var(--mute);font-weight:600">+${PER_Q} mark</span></div>
+   <p class="qtext">${esc(q.q)}</p>
+   <div role="radiogroup" aria-label="Answer options">
+   ${q.opts.map((o,k)=>`<button role="radio" aria-checked="${ex.sel[ex.i]===k}" class="opt ${ex.sel[ex.i]===k?'sel':''}" onclick="pick(${k})"><span class="r"></span><span><b>${L[k]}.</b> ${esc(o.t)}</span></button>`).join('')}
+   </div>
+   <div class="acts">
+    <button class="btn" onclick="saveNext()">Save &amp; Next</button>
+    <button class="btn violet" onclick="markNext()">Mark for Review &amp; Next</button>
+    <button class="btn ghost" onclick="clearSel()">Clear Response</button>
+    <button class="btn ghost" onclick="go(ex.i-1)" ${ex.i===0?'disabled':''}>Previous</button>
+    <button class="btn ok" style="margin-left:auto" onclick="confirmSubmit()">Submit Test</button>
+   </div>
+  </main>
+  <aside class="pal ${wasOpen?'open':''}" id="pal" aria-label="Question palette">
+   <div class="leg">
+    <div><b style="background:#16a34a">${cnt('A')}</b>Answered</div>
+    <div><b style="background:#dc2626">${cnt('N')}</b>Not answered</div>
+    <div><b style="background:#6d28d9">${cnt('M')}</b>Marked</div>
+    <div><b style="background:#9ca3af">${nv}</b>Not visited</div>
+   </div>
+   <div class="qs">${ex.qs.map((_,i)=>`<button class="qb ${qState(i)} ${i===ex.i?'cur':''}" onclick="go(${i})" aria-label="Question ${i+1}">${i+1}</button>`).join('')}</div>
+   <button class="btn palbtn" style="margin-top:14px;width:100%" onclick="$('#pal').classList.remove('open')">Close palette</button>
+  </aside>
+ </div>`;
+ tick();
+}
+function pick(k){ex.sel[ex.i]=k;renderExam()}
+function clearSel(){ex.sel[ex.i]=-1;ex.mark[ex.i]=false;renderExam()}
+function go(i){if(i<0||i>=ex.qs.length)return;ex.i=i;ex.vis[i]=true;$('#pal')?.classList.remove('open');renderExam();window.scrollTo(0,0)}
+function saveNext(){ex.mark[ex.i]=false;if(ex.i<ex.qs.length-1)go(ex.i+1);else renderExam()}
+function markNext(){ex.mark[ex.i]=true;if(ex.i<ex.qs.length-1)go(ex.i+1);else renderExam()}
+function confirmSubmit(){
+ const a=ex.sel.filter(x=>x>=0).length,n=ex.qs.length,m=ex.mark.filter(Boolean).length;
+ $('#modal').innerHTML=`<div class="mod" role="dialog" aria-modal="true" aria-labelledby="ct"><div class="box">
+  <h2 id="ct">Submit this test?</h2>
+  <ul><li>Answered: <b>${a}</b></li><li>Not answered: <b>${n-a}</b></li><li>Marked for review: <b>${m}</b></li></ul>
+  <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap"><button class="btn ghost" onclick="closeM()">Go back</button><button class="btn ok" onclick="submit(false)">Yes, submit</button></div>
+ </div></div>`;
+}
+
+/* ============================== RESULT ============================== */
+function submit(auto){
+ if(!ex)return;
+ stopTimer();closeM();
+ const e=ex;
+ let c=0,w=0;
+ e.qs.forEach((q,i)=>{if(e.sel[i]<0)return;e.sel[i]===q.ans?c++:w++});
+ const used=Math.min(MINUTES*60,Math.round((Date.now()-(e.end-MINUTES*60000))/1000));
+ const r={id:e.s.id,name:e.s.name,score:c*PER_Q,total:e.qs.length*PER_Q,c,w,u:e.qs.length-c-w,used,qs:e.qs,sel:e.sel,auto};
+ results[e.s.id]=r;ex=null;
+ resultPage(r);
+}
+function resultPage(r){
+ const pct=Math.round(r.score/r.total*100);
+ const msg=pct>=80?'Excellent work!':pct>=50?'Good start. Keep practising.':'Needs more practice. The full portal can help.';
+ const rest=SUBJECTS.filter(s=>s.id!==r.id);
+ const rv=(q,i)=>{const s=r.sel[i];return `<div class="card rv"><div style="font-weight:700;white-space:pre-line">Q${i+1}. ${esc(q.q)}</div>
+  <div style="margin-top:8px">${q.opts.map((o,k)=>`<div class="o ${k===q.ans?'c':k===s?'w':''}">${L[k]}. ${esc(o.t)}${k===s?' <b>(your answer)</b>':''}${k===q.ans?' <b>(correct)</b>':''}</div>`).join('')}</div>
+  ${s<0?'<div style="margin-top:6px;color:var(--mute)">You did not attempt this question.</div>':''}
+  <div style="margin-top:8px;background:#eff6ff;border:1px dashed #93b4f5;border-radius:4px;padding:6px 10px;color:var(--navy)">${lockSvg} Step-by-step solution is for members. <a href="${SIGNUP_URL}">Sign up</a></div></div>`};
+ $('#app').innerHTML=topBar()+`
+ <main id="main" class="wrap" style="padding-top:20px;padding-bottom:24px">
+  <div class="card score">
+   <div style="color:var(--mute);font-weight:600">${esc(r.name)} · Demo Test${r.auto?' · time up, auto-submitted':''}</div>
+   <div class="big">${r.score}<span style="font-size:1.4rem;color:var(--mute)">/${r.total}</span></div>
+   <div style="font-weight:700;margin-top:4px">${msg}</div>
+   <div class="stats">
+    <div class="stat"><b style="color:var(--green)">${r.c}</b>Correct</div>
+    <div class="stat"><b style="color:var(--red)">${r.w}</b>Wrong</div>
+    <div class="stat"><b style="color:var(--mute)">${r.u}</b>Skipped</div>
+    <div class="stat"><b>${pct}%</b>Accuracy</div>
+    <div class="stat"><b>${mmss(r.used)}</b>Time used</div>
+   </div>
+   <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:18px">
+    <a class="btn warn" href="${SIGNUP_URL}">Sign up for full tests</a>
+    <button class="btn ghost" onclick="intro('${r.id}')">Retry this test</button>
+    <button class="btn ghost" onclick="home()">All subjects</button>
+   </div>
+  </div>
+
+  <h2 style="margin:26px 0 4px">Answer review</h2>
+  <p style="margin:0 0 12px;color:var(--mute)">The first 3 questions are open in the demo. Members see every answer with a full solution.</p>
+  ${r.qs.slice(0,3).map((q,i)=>rv(q,i)).join('')}
+  <div class="rvlock"><div class="inner">${r.qs.slice(3,6).map((q,i)=>rv(q,i+3)).join('')}</div>
+   <div class="over"><div class="card"><div class="lockchip" style="margin-bottom:10px">${lockSvg} Members only</div>
+    <h3 style="margin:0 0 6px">Unlock answers for questions 4 to 10</h3>
+    <p style="margin:0 0 14px;color:var(--mute);font-size:.92rem">See every correct answer with step-by-step solutions, plus topic-wise analysis and saved history.</p>
+    <a class="btn warn" href="${SIGNUP_URL}">Sign up, plans from ${rs(PLANS[0].price)}</a></div></div></div>
+
+  <h2 style="margin:28px 0 12px">Your full report <span class="pill" style="background:var(--navy2);color:#fff;vertical-align:middle">Members</span></h2>
+  <div class="grid g3">
+   ${['All India rank & percentile','Topic-wise accuracy','Time spent per question'].map(t=>`<div class="card locked"><div class="blur" style="padding:18px"><div style="font-weight:700">${t}</div><div style="height:46px;margin-top:8px;background:linear-gradient(90deg,#93b4f5 30%,#dbe7ff 30%);border-radius:4px"></div></div><div class="lk"><a class="lockchip" href="${SIGNUP_URL}" style="text-decoration:none">${lockSvg} Sign up to unlock</a></div></div>`).join('')}
+  </div>
+
+  <h2 style="margin:28px 0 12px">Try another subject</h2>
+  <div class="grid g3">
+   ${rest.map(s=>{const x=results[s.id];return `<div class="card sub-card" style="flex-direction:row;align-items:center;gap:12px">
+    <div class="badge" style="background:${s.color};flex:none" aria-hidden="true">${s.abbr}</div>
+    <div style="flex:1;min-width:0"><b>${esc(s.name)}</b><div style="font-size:.8rem;color:var(--mute)">${x?`Last score ${x.score}/${x.total}`:'10 Q · 10 min'}</div></div>
+    <button class="btn sm" onclick="intro('${s.id}')">${x?'Retry':'Start'}</button></div>`}).join('')}
+  </div>
+ </main>
+ <footer><div class="wrap">Questions? Email <a href="mailto:${SUPPORT}">${SUPPORT}</a></div></footer>`;
+ window.scrollTo(0,0);
+}
+
+window.addEventListener('beforeunload',e=>{if(ex){e.preventDefault();e.returnValue=''}});
+home();
+</script>
+</body>
+</html>
